@@ -65,9 +65,20 @@
             margin-bottom: 2vh;
             height: 6vh;
 
+            &:hover {
+                background: transparent;
+                color: $white;
+            }
+
             &:last-of-type {
                 background: transparent;
                 color: $white;
+
+                &:hover {
+                    background: $white;
+                    color: #000;
+                }
+
             }
         }
     }
