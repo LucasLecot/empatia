@@ -1,89 +1,92 @@
-.composants {
+.components {
+    background-color: $blue;
+    background-image: url("../img/light.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    width: 100%;
+    height: 100vh;
+    padding: 29vh 0 0 45vw;
+    position: relative;
 
-    .content {
-        width: 27%;
-        margin: 29vh 0 0 45vw;
+    h4 {
+        font: 1.3rem $roboto;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 4.4px;
+    }
+    h2 {
+        font: 5.5rem $robotoB;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 1px;
+    }
+    p {
+        font: 1.5rem $roboto;
+        color: $white;
+        margin: 3vh 0 0 4vw;
+        letter-spacing: 3.4px;
+        line-height: 1.5;
+        width: 70%;
+    }
+
+    .leaf-component {
+        list-style: none;
         overflow: hidden;
 
-        h4 {
-            font: 1.3rem $roboto;
-            text-transform: uppercase;
-            color: $white;
-            letter-spacing: 4.4px;
-        }
-        h2 {
-            font: 5.5rem $robotoB;
-            text-transform: uppercase;
-            color: $white;
-            letter-spacing: 1px;
-        }
-        p {
-            font: 1.5rem $roboto;
-            color: $white;
-            margin: 3vh 0 0 4vw;
-            letter-spacing: 3.4px;
-            line-height: 1.5;
-        }
+        li {
+            position: absolute;
+            opacity: 0.5;
 
-        .leaf-component {
-            list-style: none;
-            overflow: hidden;
-
-            li {
-                position: absolute;
-                opacity: 0.5;
-
-                &:nth-of-type(1) {
-                    top: 18vh;
-                    left: 0;
-                }
-                &:nth-of-type(2) {
-                    top: -5vh;
-                    left: 50vw;
-                }
-                &:nth-of-type(3) {
-                    top: 2vh;
-                    right: 0;
-                }
-                &:nth-of-type(4) {
-                    top: 55vh;
-                    left: 39vw;
-                }
-                &:nth-of-type(5) {
-                    bottom: 0;
-                    left: 35vw;
-                }
-                &:nth-of-type(6) {
-                    bottom: 0;
-                    left: 68vw;
-                }
-                &:nth-of-type(7) {
-                    bottom: 10vh;
-                    left: 0;
-                }
+            &:nth-of-type(1) {
+                top: 18vh;
+                left: 0;
             }
-
+            &:nth-of-type(2) {
+                top: -5vh;
+                left: 50vw;
+            }
+            &:nth-of-type(3) {
+                top: 2vh;
+                right: 0;
+            }
+            &:nth-of-type(4) {
+                top: 55vh;
+                left: 39vw;
+            }
+            &:nth-of-type(5) {
+                bottom: 0;
+                left: 35vw;
+            }
+            &:nth-of-type(6) {
+                bottom: 0;
+                left: 68vw;
+            }
+            &:nth-of-type(7) {
+                bottom: 10vh;
+                left: 0;
+            }
         }
 
-        .pils-component {
-            list-style: none;
+    }
 
-            li {
-                position: absolute;
+    .pils-component {
+        list-style: none;
 
-                &:nth-of-type(1) {
-                    top: 75vh;
-                    left: 10vw;
-                }
-                &:nth-of-type(2) {
-                    top: 30vh;
-                    left: 25vw;
-                }
-                &:nth-of-type(3) {
-                    top: 75vh;
-                    left: 50vw;
-                }
+        li {
+            position: absolute;
 
+            &:nth-of-type(1) {
+                top: 75vh;
+                left: 10vw;
+            }
+            &:nth-of-type(2) {
+                top: 30vh;
+                left: 25vw;
+            }
+            &:nth-of-type(3) {
+                top: 75vh;
+                left: 50vw;
             }
 
         }

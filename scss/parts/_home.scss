@@ -1,13 +1,12 @@
 .home {
     background-color: $blue;
-    background-image: url("../img/video-hero-finale.gif");
+    background-image: url("../img/video.gif");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 0% 150%;
+    background-position: 0% 0%;
 
-    .content {
+    .intro {
         height: 100vh;
-        overflow-y: hidden;
 
         h2 {
             font: 2rem $roboto;
@@ -15,7 +14,7 @@
             color: $white;
             letter-spacing: 3px;
             text-align: center;
-            margin-top: 60vh;
+            padding-top: 60vh;
         }
     }
 

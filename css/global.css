@@ -54,14 +54,16 @@ img {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50% 0%;
-  height: 100vh;
-  overflow: hidden; }
-  .all-content h1 {
-    font: 7em "OCR", sans-serif;
+  height: 100vh; }
+  .all-content a h1 {
+    position: fixed;
+    font: 15em "OCR", sans-serif;
     color: #fff;
-    margin: 7vh 0 0 5vw; }
+    top: 7vh;
+    left: 5vw;
+    z-index: 999; }
   .all-content .counter {
-    position: absolute;
+    position: fixed;
     right: 30px;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -87,130 +89,218 @@ img {
 
 .home {
   background-color: #1a217f;
-  background-image: url("../img/video-hero-finale.gif");
+  background-image: url("../img/video.gif");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 0% 150%; }
-  .home .content {
-    height: 100vh;
-    overflow-y: hidden; }
-    .home .content h2 {
+  background-position: 0% 0%; }
+  .home .intro {
+    height: 100vh; }
+    .home .intro h2 {
       font: 2rem "Roboto Condensed Regular", sans-serif;
       text-transform: uppercase;
       color: #fff;
       letter-spacing: 3px;
       text-align: center;
-      margin-top: 60vh; }
+      padding-top: 60vh; }
 
-.why {
+.dystopie {
   background-color: #1a217f;
   background-image: url("../img/brain.gif");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 0% 100%; }
-  .why .content {
-    width: 50%;
-    margin: 10vh 0 0 20vw; }
-    .why .content h4 {
-      font: 1.3rem "Roboto Condensed Regular", sans-serif;
-      text-transform: uppercase;
-      color: #fff;
-      letter-spacing: 4.4px; }
-    .why .content h2 {
-      font: 5.5rem "Roboto Condensed Bold", sans-serif;
-      text-transform: uppercase;
-      color: #fff;
-      letter-spacing: 1px; }
-    .why .content p {
-      font: 1.5rem "Roboto Condensed Regular", sans-serif;
-      color: #fff;
-      margin: 3vh 0 0 4vw;
-      letter-spacing: 3.4px;
-      line-height: 1.5; }
-
-.effects .content {
-  width: 40%;
-  margin: 29vh 0 0 20vw; }
-  .effects .content h4 {
+  background-position: 0% 100%;
+  width: 100%;
+  height: 86vh;
+  padding: 10vh 0 0 20vw; }
+  .dystopie h4 {
     font: 1.3rem "Roboto Condensed Regular", sans-serif;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 4.4px; }
-  .effects .content h2 {
+  .dystopie h2 {
     font: 5.5rem "Roboto Condensed Bold", sans-serif;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 1px; }
-  .effects .content p {
+  .dystopie p {
     font: 1.5rem "Roboto Condensed Regular", sans-serif;
     color: #fff;
     margin: 3vh 0 0 4vw;
     letter-spacing: 3.4px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    width: 50vw; }
 
-.composants .content {
-  width: 27%;
-  margin: 29vh 0 0 45vw;
-  overflow: hidden; }
-  .composants .content h4 {
+.effects {
+  background-color: #1a217f;
+  background-image: url("../img/light.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  width: 100%;
+  height: 100vh;
+  padding: 29vh 0 0 15vw;
+  position: relative; }
+  .effects img {
+    position: absolute;
+    top: 5vh;
+    width: 75%;
+    left: 5vw; }
+  .effects h4 {
+    position: relative;
+    z-index: 1;
     font: 1.3rem "Roboto Condensed Regular", sans-serif;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 4.4px; }
-  .composants .content h2 {
+  .effects h2 {
+    position: relative;
+    z-index: 1;
     font: 5.5rem "Roboto Condensed Bold", sans-serif;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 1px; }
-  .composants .content p {
+  .effects p {
+    position: relative;
+    z-index: 1;
     font: 1.5rem "Roboto Condensed Regular", sans-serif;
     color: #fff;
     margin: 3vh 0 0 4vw;
     letter-spacing: 3.4px;
-    line-height: 1.5; }
-  .composants .content .leaf-component {
+    line-height: 1.5;
+    width: 40vw; }
+
+.components {
+  background-color: #1a217f;
+  background-image: url("../img/light.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  width: 100%;
+  height: 100vh;
+  padding: 29vh 0 0 45vw;
+  position: relative; }
+  .components h4 {
+    font: 1.3rem "Roboto Condensed Regular", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4.4px; }
+  .components h2 {
+    font: 5.5rem "Roboto Condensed Bold", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px; }
+  .components p {
+    font: 1.5rem "Roboto Condensed Regular", sans-serif;
+    color: #fff;
+    margin: 3vh 0 0 4vw;
+    letter-spacing: 3.4px;
+    line-height: 1.5;
+    width: 70%; }
+  .components .leaf-component {
     list-style: none;
     overflow: hidden; }
-    .composants .content .leaf-component li {
+    .components .leaf-component li {
       position: absolute;
       opacity: 0.5; }
-      .composants .content .leaf-component li:nth-of-type(1) {
+      .components .leaf-component li:nth-of-type(1) {
         top: 18vh;
         left: 0; }
-      .composants .content .leaf-component li:nth-of-type(2) {
+      .components .leaf-component li:nth-of-type(2) {
         top: -5vh;
         left: 50vw; }
-      .composants .content .leaf-component li:nth-of-type(3) {
+      .components .leaf-component li:nth-of-type(3) {
         top: 2vh;
         right: 0; }
-      .composants .content .leaf-component li:nth-of-type(4) {
+      .components .leaf-component li:nth-of-type(4) {
         top: 55vh;
         left: 39vw; }
-      .composants .content .leaf-component li:nth-of-type(5) {
+      .components .leaf-component li:nth-of-type(5) {
         bottom: 0;
         left: 35vw; }
-      .composants .content .leaf-component li:nth-of-type(6) {
+      .components .leaf-component li:nth-of-type(6) {
         bottom: 0;
         left: 68vw; }
-      .composants .content .leaf-component li:nth-of-type(7) {
+      .components .leaf-component li:nth-of-type(7) {
         bottom: 10vh;
         left: 0; }
-  .composants .content .pils-component {
+  .components .pils-component {
     list-style: none; }
-    .composants .content .pils-component li {
+    .components .pils-component li {
       position: absolute; }
-      .composants .content .pils-component li:nth-of-type(1) {
+      .components .pils-component li:nth-of-type(1) {
         top: 75vh;
         left: 10vw; }
-      .composants .content .pils-component li:nth-of-type(2) {
+      .components .pils-component li:nth-of-type(2) {
         top: 30vh;
         left: 25vw; }
-      .composants .content .pils-component li:nth-of-type(3) {
+      .components .pils-component li:nth-of-type(3) {
         top: 75vh;
         left: 50vw; }
 
+.promise {
+  background-color: #1a217f;
+  background-image: url("../img/light.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  width: 100%;
+  height: 100vh;
+  padding: 29vh 0 0 30vw;
+  position: relative;
+  overflow: hidden; }
+  .promise img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0; }
+  .promise h4 {
+    position: relative;
+    z-index: 1;
+    font: 1.3rem "Roboto Condensed Regular", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4.4px; }
+  .promise h2 {
+    position: relative;
+    z-index: 1;
+    font: 5.5rem "Roboto Condensed Bold", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px; }
+  .promise p {
+    position: relative;
+    z-index: 1;
+    font: 1.5rem "Roboto Condensed Regular", sans-serif;
+    color: #fff;
+    margin: 3vh 0 0 4vw;
+    letter-spacing: 3.4px;
+    line-height: 1.5;
+    width: 70%; }
+  .promise .btns {
+    position: relative;
+    z-index: 1;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5vh 0 0 20vw; }
+    .promise .btns button {
+      background: #fff;
+      font: 1.5rem "Roboto Condensed Regular", sans-serif;
+      letter-spacing: 3.4px;
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      margin-bottom: 2vh;
+      height: 6vh; }
+      .promise .btns button:last-of-type {
+        background: transparent;
+        color: #fff; }
+
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 1vh;
   width: 100%; }
   .footer .social {
@@ -243,27 +333,34 @@ img {
     color: #fff;
     margin-right: 2vw;
     margin-top: 1vh; }
-div.loader-pill {
+
+.loader div.loader-pill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background: #1a217f;
+  transition: 0.5s;
   display: flex;
-  margin-top: 50%;
-  transform: translateY(-50%);
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  transition: 0.5s; }
-  div.loader-pill h2 {
+  align-items: center; }
+  .loader div.loader-pill .loader-pill-content h2 {
     font-size: 22px;
-    margin-bottom: 8%;
+    margin-bottom: 8vh;
     font-family: "Roboto";
     font-weight: 100;
-    color: #c3c8df; }
-  div.loader-pill .shadow {
+    color: #c3c8df;
+    transform: translateX(-10%); }
+  .loader div.loader-pill .loader-pill-content .shadow {
     margin-top: 50px;
-    width: 10%;
+    width: 80%;
     height: 10px;
     background: rgba(11, 21, 80, 0.4);
     border-radius: 60%; }
-  div.loader-pill .blobs {
+  .loader div.loader-pill .loader-pill-content .blobs {
     width: 95px;
     height: 30px;
     margin-bottom: 2%;
@@ -274,14 +371,14 @@ div.loader-pill {
     animation: pills ease 3.7s infinite;
     border: 1px solid #75d9f0;
     background: radial-gradient(50% 100%, #fff 75%, #acedfc 100%); }
-    div.loader-pill .blobs .bg-left {
+    .loader div.loader-pill .loader-pill-content .blobs .bg-left {
       width: 50%;
       height: 100%;
       background: #00b7d8;
       /* Rectangle 3: */
       transform: rotate(-180deg);
       background-image: linear-gradient(0deg, #8aedff 2%, #00b7d8 30%); }
-  div.loader-pill .blob {
+  .loader div.loader-pill .loader-pill-content .blob {
     position: absolute;
     background: #00b7d8;
     top: 50%;
@@ -293,27 +390,27 @@ div.loader-pill {
     transform: scale(0.9) translate(-50%, -50%);
     transform-origin: center top;
     opacity: 0; }
-    div.loader-pill .blob:nth-child(1) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(1) {
       animation-delay: 0.2s; }
-    div.loader-pill .blob:nth-child(2) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(2) {
       animation-delay: 0.4s; }
-    div.loader-pill .blob:nth-child(3) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(3) {
       animation-delay: 0.6s; }
-    div.loader-pill .blob:nth-child(4) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(4) {
       animation-delay: 0.8s; }
-    div.loader-pill .blob:nth-child(5) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(5) {
       animation-delay: 1s; }
-    div.loader-pill .blob:nth-child(6) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(6) {
       animation-delay: 1.2s; }
-    div.loader-pill .blob:nth-child(7) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(7) {
       animation-delay: 1.4s; }
-    div.loader-pill .blob:nth-child(8) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(8) {
       animation-delay: 1.6s; }
-    div.loader-pill .blob:nth-child(9) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(9) {
       animation-delay: 1.8s; }
-    div.loader-pill .blob:nth-child(10) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(10) {
       animation-delay: 2s; }
-    div.loader-pill .blob:nth-child(11) {
+    .loader div.loader-pill .loader-pill-content .blob:nth-child(11) {
       animation-delay: 2.2s; }
 @keyframes blobs {
   0% {
@@ -322,7 +419,7 @@ div.loader-pill {
   1% {
     opacity: 1; }
   35%,
-      65% {
+            65% {
     opacity: 1;
     transform: scale(0.9) translate(-50%, -50%); }
   99% {
@@ -332,19 +429,19 @@ div.loader-pill {
     transform: scale(0) translate(calc(330px - 50%), -50%); } }
 @keyframes blob-grow {
   0%,
-      39% {
+            39% {
     transform: scale(0) translate(-50%, -50%); }
   40%,
-      42% {
+            42% {
     transform: scale(1, 0.9) translate(-50%, -50%); }
   43%,
-      44% {
+            44% {
     transform: scale(1.2, 1.1) translate(-50%, -50%); }
   45%,
-      46% {
+            46% {
     transform: scale(1.3, 1.2) translate(-50%, -50%); }
   47%,
-      48% {
+            48% {
     transform: scale(1.4, 1.3) translate(-50%, -50%); }
   52% {
     transform: scale(1.5, 1.4) translate(-50%, -50%); }
@@ -353,27 +450,27 @@ div.loader-pill {
   58% {
     transform: scale(1.8, 1.7) translate(-50%, -50%); }
   68%,
-      70% {
+            70% {
     transform: scale(1.7, 1.5) translate(-50%, -50%); }
   78% {
     transform: scale(1.6, 1.4) translate(-50%, -50%); }
   80%,
-      81% {
+            81% {
     transform: scale(1.5, 1.4) translate(-50%, -50%); }
   82%,
-      83% {
+            83% {
     transform: scale(1.4, 1.3) translate(-50%, -50%); }
   84%,
-      85% {
+            85% {
     transform: scale(1.3, 1.2) translate(-50%, -50%); }
   86%,
-      87% {
+            87% {
     transform: scale(1.2, 1.1) translate(-50%, -50%); }
   90%,
-      91% {
+            91% {
     transform: scale(1, 0.9) translate(-50%, -50%); }
   92%,
-      100% {
+            100% {
     transform: scale(0) translate(-50%, -50%); } }
 @keyframes pills {
   0% {
@@ -382,6 +479,5 @@ div.loader-pill {
     transform: rotate(90deg); }
   100% {
     transform: rotate(360deg); } }
-
 
 /*# sourceMappingURL=global.css.map */

@@ -5,16 +5,18 @@
     background-repeat: no-repeat;
     background-position: 50% 0%;
     height: 100vh;
-    overflow: hidden;
 
-    h1 {
-        font: 7em $ocr;
+    a h1 {
+        position: fixed;
+        font: 15em $ocr;
         color: $white;
-        margin: 7vh 0 0 5vw;
+        top: 7vh;
+        left: 5vw;
+        z-index: 999;
     }
 
     .counter {
-        position: absolute;
+        position: fixed;
         right: 30px;
         top: 50%;
         -webkit-transform: translateY(-50%);

@@ -1,9 +1,11 @@
 const loader = document.querySelector('.loader-pill');
 const content = document.querySelector('.content');
+const load = document.querySelector('.loader');
 
-setTimeout(() => {
-    console.log("e");
+setTimeout( () => {
     loader.style.opacity = "0";
     content.style.opacity = "1";
     loader.style.display = "none";
-}, 5500);
+    loader.remove();
+    load.classList.remove("loader");
+}, 100);

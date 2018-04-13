@@ -1,0 +1,75 @@
+.promise {
+    background-color: $blue;
+    background-image: url("../img/light.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    width: 100%;
+    height: 100vh;
+    padding: 29vh 0 0 30vw;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        right: 0;
+    }
+
+    h4 {
+        position: relative;
+        z-index: 1;
+        font: 1.3rem $roboto;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 4.4px;
+    }
+    h2 {
+        position: relative;
+        z-index: 1;
+        font: 5.5rem $robotoB;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 1px;
+    }
+    p {
+        position: relative;
+        z-index: 1;
+        font: 1.5rem $roboto;
+        color: $white;
+        margin: 3vh 0 0 4vw;
+        letter-spacing: 3.4px;
+        line-height: 1.5;
+        width: 70%;
+    }
+
+    .btns {
+        position: relative;
+        z-index: 1;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5vh 0 0 20vw;
+
+        button {
+            background: $white;
+            font: 1.5rem $roboto;
+            letter-spacing: 3.4px;
+            text-transform: uppercase;
+            border: 1px solid $white;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            margin-bottom: 2vh;
+            height: 6vh;
+
+            &:last-of-type {
+                background: transparent;
+                color: $white;
+            }
+        }
+    }
+
+}
