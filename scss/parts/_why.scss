@@ -1,8 +1,14 @@
-.effects {
+.why {
+    background-color: $blue;
+    background-image: url("../img/brain.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
 
     .content {
-        width: 40%;
-        margin: 29vh 0 0 20vw;
+
+        width: 50%;
+        margin: 10vh 0 0 20vw;
 
         h4 {
             font: 1.3rem $roboto;
@@ -23,6 +29,7 @@
             letter-spacing: 3.4px;
             line-height: 1.5;
         }
+
     }
 
 }
