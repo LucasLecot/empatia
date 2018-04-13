@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+* {
+  outline: none; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer; }
+
+img {
+  display: block; }
+
+@font-face {
+  font-family: 'OCR';
+  src: url("../fonts/OCRAStd.otf"); }
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("../fonts/RobotoCondensed-Regular.ttf"); }
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url("../fonts/RobotoCondensed-Bold.ttf");
+  font-weight: 700; }
+body {
+  background-color: #1a217f;
+  background-image: url("../img/light.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%; }
+  body .content {
+    height: 100vh;
+    overflow: hidden; }
+    body .content h1 {
+      font: 7em "OCR", sans-serif;
+      color: #fff;
+      margin: 7vh 0 0 5vw; }
+    body .content .counter {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      body .content .counter a {
+        font: 1.2rem "Roboto Condensed Regular", sans-serif;
+        color: #fff; }
+      body .content .counter a {
+        display: block;
+        text-align: center;
+        margin: 15px auto;
+        font: 1rem "Roboto Condensed Regular", sans-serif; }
+        body .content .counter a.active {
+          padding: 5px;
+          border: 1px solid #fff;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          font-size: 1.2rem; }
+
+.home {
+  overflow-y: hidden; }
+  .home img {
+    position: absolute;
+    width: 100%;
+    top: -15vh;
+    z-index: -1; }
+  .home h2 {
+    font: 2rem "Roboto Condensed Regular", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 60vh; }
+
+.effects {
+  width: 40%;
+  margin: 29vh 0 0 20vw; }
+  .effects h4 {
+    font: 1.3rem "Roboto Condensed Regular", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4.4px; }
+  .effects h2 {
+    font: 5.5rem "Roboto Condensed Bold", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px; }
+  .effects p {
+    font: 1.5rem "Roboto Condensed Regular", sans-serif;
+    color: #fff;
+    margin: 3vh 0 0 4vw;
+    letter-spacing: 3.4px;
+    line-height: 1.5; }
+
+.composants {
+  width: 27%;
+  margin: 29vh 0 0 45vw;
+  overflow: hidden; }
+  .composants h4 {
+    font: 1.3rem "Roboto Condensed Regular", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4.4px; }
+  .composants h2 {
+    font: 5.5rem "Roboto Condensed Bold", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px; }
+  .composants p {
+    font: 1.5rem "Roboto Condensed Regular", sans-serif;
+    color: #fff;
+    margin: 3vh 0 0 4vw;
+    letter-spacing: 3.4px;
+    line-height: 1.5; }
+  .composants .leaf-component {
+    list-style: none;
+    overflow: hidden; }
+    .composants .leaf-component li {
+      position: absolute;
+      opacity: 0.5; }
+      .composants .leaf-component li:nth-of-type(1) {
+        top: 18vh;
+        left: 0; }
+      .composants .leaf-component li:nth-of-type(2) {
+        top: -5vh;
+        left: 50vw; }
+      .composants .leaf-component li:nth-of-type(3) {
+        top: 2vh;
+        right: 0; }
+      .composants .leaf-component li:nth-of-type(4) {
+        top: 55vh;
+        left: 39vw; }
+      .composants .leaf-component li:nth-of-type(5) {
+        bottom: 0;
+        left: 35vw; }
+      .composants .leaf-component li:nth-of-type(6) {
+        bottom: 0;
+        left: 68vw; }
+      .composants .leaf-component li:nth-of-type(7) {
+        bottom: 10vh;
+        left: 0; }
+  .composants .pils-component {
+    list-style: none; }
+    .composants .pils-component li {
+      position: absolute; }
+      .composants .pils-component li:nth-of-type(1) {
+        top: 75vh;
+        left: 10vw; }
+      .composants .pils-component li:nth-of-type(2) {
+        top: 30vh;
+        left: 25vw; }
+      .composants .pils-component li:nth-of-type(3) {
+        top: 75vh;
+        left: 50vw; }
+
+/*# sourceMappingURL=global.css.map */

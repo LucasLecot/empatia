@@ -1,0 +1,19 @@
+.home {
+    overflow-y: hidden;
+
+    img {
+        position: absolute;
+        width: 100%;
+        top: -15vh;
+        z-index: -1;
+    }
+    h2 {
+        font: 2rem $roboto;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-top: 60vh;
+    }
+
+}
