@@ -1,25 +1,30 @@
-.effects {
-    width: 40%;
-    margin: 29vh 0 0 20vw;
+.content{
+    opacity: 0;
+    transition: 1s;
 
-    h4 {
-        font: 1.3rem $roboto;
-        text-transform: uppercase;
-        color: $white;
-        letter-spacing: 4.4px;
+    .effects {
+        width: 40%;
+        margin: 29vh 0 0 20vw;
+    
+        h4 {
+            font: 1.3rem $roboto;
+            text-transform: uppercase;
+            color: $white;
+            letter-spacing: 4.4px;
+        }
+        h2 {
+            font: 5.5rem $robotoB;
+            text-transform: uppercase;
+            color: $white;
+            letter-spacing: 1px;
+        }
+        p {
+            font: 1.5rem $roboto;
+            color: $white;
+            margin: 3vh 0 0 4vw;
+            letter-spacing: 3.4px;
+            line-height: 1.5;
+        }
+    
     }
-    h2 {
-        font: 5.5rem $robotoB;
-        text-transform: uppercase;
-        color: $white;
-        letter-spacing: 1px;
-    }
-    p {
-        font: 1.5rem $roboto;
-        color: $white;
-        margin: 3vh 0 0 4vw;
-        letter-spacing: 3.4px;
-        line-height: 1.5;
-    }
-
 }
