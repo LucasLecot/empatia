@@ -1,19 +1,22 @@
 .home {
-    overflow-y: hidden;
+    background-color: $blue;
+    background-image: url("../img/video-hero-finale.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 150%;
 
-    img {
-        position: absolute;
-        width: 100%;
-        top: -15vh;
-        z-index: -1;
-    }
-    h2 {
-        font: 2rem $roboto;
-        text-transform: uppercase;
-        color: $white;
-        letter-spacing: 3px;
-        text-align: center;
-        margin-top: 60vh;
+    .content {
+        height: 100vh;
+        overflow-y: hidden;
+
+        h2 {
+            font: 2rem $roboto;
+            text-transform: uppercase;
+            color: $white;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-top: 60vh;
+        }
     }
 
 }

@@ -1,66 +1,62 @@
-body {
+.all-content {
     background-color: $blue;
     background-image: url("../img/light.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 0%;
+    height: 100vh;
+    overflow: hidden;
 
-    .content {
-        height: 100vh;
-        overflow: hidden;
+    h1 {
+        font: 7em $ocr;
+        color: $white;
+        margin: 7vh 0 0 5vw;
+    }
 
-        h1 {
-            font: 7em $ocr;
+    .counter {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        a {
+            font: 1.2rem $roboto;
             color: $white;
-            margin: 7vh 0 0 5vw;
-        }
 
-        .counter {
-            position: absolute;
-            right: 30px;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%);
-
-            a {
-                font: 1.2rem $roboto;
-                color: $white;
-
-                &:nth-of-type(1) {
-
-                }
-                &:nth-of-type(2) {
-
-                }
-                &:nth-of-type(3) {
-
-                }
-                &:nth-of-type(4) {
-
-                }
-                &:nth-of-type(5) {
-
-                }
+            &:nth-of-type(1) {
 
             }
-            a {
-                display: block;
-                text-align: center;
-                margin: 15px auto;
-                font: 1rem $roboto;
+            &:nth-of-type(2) {
 
-                &.active {
-                    padding: 5px;
-                    border: 1px solid $white;
-                    -webkit-border-radius: 50%;
-                    -moz-border-radius: 50%;
-                    border-radius: 50%;
-                    font-size: 1.2rem;
-                }
+            }
+            &:nth-of-type(3) {
 
+            }
+            &:nth-of-type(4) {
+
+            }
+            &:nth-of-type(5) {
+
+            }
+
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin: 15px auto;
+            font: 1rem $roboto;
+
+            &.active {
+                padding: 5px;
+                border: 1px solid $white;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                font-size: 1.2rem;
             }
 
         }
